@@ -1,16 +1,17 @@
 {
   "name": "react-meta-changer",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
+  "repository": "https://github.com/amit-gaikwad/react-meta-changer",
   "scripts": {
     "serve": "webpack-dev-server --mode development",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel ./src/components -d dist --copy-files"
+    "prepublish": "npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Amit Gaikwad",
   "license": "ISC",
   "peerDependencies": {
     "react": "^16.12.0",

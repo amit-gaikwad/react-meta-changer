@@ -11,10 +11,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        include: path.resolve(__dirname, "src"),
-        use: ["babel-loader"]
+        test: /\.js?$/,
+        exclude: /(node_modules)/,
+        use: "babel-loader"
       },
       {
         test: /\.css$/i,
@@ -23,7 +22,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "dist"),
+    contentBase: path.resolve(__dirname, "build"),
     port: 9000
   }
   // plugins: [
