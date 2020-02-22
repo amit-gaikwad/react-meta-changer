@@ -7,5 +7,5 @@
 
 import Card from "./components/Cards/Cards";
 import Timer from "./components/Timer/timer";
-
-export { Card, Timer };
+import { MetaChanger } from "./components/MetaChanger/MetaChanger";
+export { Card, Timer, MetaChanger };
